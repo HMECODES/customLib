@@ -1,8 +1,8 @@
 [![discord server](https://media.discordapp.net/attachments/929706675022233640/933723518321967144/banner.jpg)](https://discord.gg/jaunk8nhN5)
 
-# Mercury
+# MercurySFX
 
-Mercury is a free and open sourced Roblox UI library.
+Mercury is a free and open sourced Roblox UI library, but this time with a full rewrite for Hacky.
 
 - https://discord.gg/jaunk8nhN5
 - https://discord.com/users/480805591221010456
