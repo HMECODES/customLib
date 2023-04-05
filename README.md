@@ -113,7 +113,9 @@ Tab:Slider{
 	Default = 50,
 	Min = 0,
 	Max = 100,
-	Callback = function() end
+	Callback = function(func) 
+	
+	end
 }
 ```
 
