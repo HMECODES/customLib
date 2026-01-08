@@ -9896,7 +9896,7 @@ namespace FFlags {
 	 uintptr_t TaskSchedulerJobInitExecFreqMin = 0x67fbd50;
 	 uintptr_t TaskSchedulerJobInitThreads = 0x67fbd58;
 	 uintptr_t TaskSchedulerJobMaxStackSizeBytes = 0x67fbe14;
-	 uintptr_t TaskSchedulerLimitTargetFpsTo240 = 0x6866ce0;
+	 uintptr_t TaskSchedulerLimitTargetFpsTo2402 = 0x6866ce0;
 	 uintptr_t TaskSchedulerMaxNumOfArbiters = 0x67fbd04;
 	 uintptr_t TaskSchedulerMaxNumOfJobs = 0x67fbd08;
 	 uintptr_t TaskSchedulerMaxStackSizeBytes = 0x67fbd0c;
