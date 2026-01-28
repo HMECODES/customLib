@@ -1,8 +1,6 @@
 #pragma once
 namespace FFlags
 {
-
-
     uintptr_t ACSUGCValidationRCCOnly = 0x67b2170;
     uintptr_t ACSValidateTokenWithRegex = 0x67b2150;
     uintptr_t ADS4948SendUniverseIdToEventStream = 0x67d4670;
