@@ -15,7 +15,8 @@
 ██████▀  ▀███████   ▀████▀   ▀███████ ████████  ▀█████▀  ███       ███      ███ ▀███████ ███    ███    ███
                                        --discord.gg/meowbypass--
 Version: version-80c7b8e578f241ff
-Resolved offsets: 11930
+Resolved offsets: 11951
+Unique identifiers processed: 28862
 */
 #pragma once
 
@@ -29,6 +30,7 @@ namespace FFlags
     uintptr_t AES128 = 0x53b7f58;
     uintptr_t AES192 = 0x53b7fd8;
     uintptr_t AES256 = 0x538bbb8;
+    uintptr_t AESAddCreatorIdToSearch = 0x689e9a8;
     uintptr_t AESEnableAvatarThumbnailRefresh = 0x6885ae0;
     uintptr_t AESEnableGetHeadShapes = 0x6885bd0;
     uintptr_t AESEnableTimedOptions = 0x6885b80;
@@ -54,6 +56,7 @@ namespace FFlags
     uintptr_t AUMIncludeMood = 0x6887bb8;
     uintptr_t AUMPAnalytics = 0x68a3028;
     uintptr_t AUMSetupAdapterPartsUpdate = 0x68a9a70;
+    uintptr_t AUMUnificationScaleUpdate = 0x68a9a90;
     uintptr_t AUMWithAnimate = 0x68a9a50;
     uintptr_t AbdmDefaultBaseRetryTimeMs = 0x6849ef8;
     uintptr_t AbdmDefaultCleanupThreshold = 0x6849ee4;
@@ -678,6 +681,7 @@ namespace FFlags
     uintptr_t AudioPlaylistSelectionLogic = 0x7570988;
     uintptr_t AudioRecorderMaxLength = 0x684cff0;
     uintptr_t AudioSignalUseBaseRCU = 0x68c6f90;
+    uintptr_t AudioSimulationFidelity = 0x7c63290;
     uintptr_t AudioSpatializationEnableOverride = 0x68ae338;
     uintptr_t AudioSpeechToTextLog = 0x68af090;
     uintptr_t AudioSpeechToTextLogTimings = 0x68af1a0;
@@ -1442,6 +1446,7 @@ namespace FFlags
     uintptr_t ClientSideMigrationMetrics = 0x687ca48;
     uintptr_t ClientSideUserHashingTelemetryThrottleHundredthsPercent = 0x757014c;
     uintptr_t ClientStatsWithFacsBWPerHundPercent = 0x756e5b4;
+    uintptr_t ClientToastNotificationsEnabled = 0x68aa4c0;
     uintptr_t ClientWebBrowserCompatibleVersion = 0x68461cc;
     uintptr_t ClientWebrtcIceTransportsType = 0x6852314;
     uintptr_t ClipMainAudioOutput = 0x68c3960;
@@ -3208,6 +3213,7 @@ namespace FFlags
     uintptr_t EnableAssetProviderForThumbnailerRCC = 0x68bdfc8;
     uintptr_t EnableAudioChannelCountProperty = 0x68c40b0;
     uintptr_t EnableAudioChannelSelector = 0x68af230;
+    uintptr_t EnableAudioFocusManagement = 0x6869418;
     uintptr_t EnableAudioPlayerTelemetry = 0x68aef60;
     uintptr_t EnableAudioRecorder = 0x68af050;
     uintptr_t EnableAuthV2Login = 0x68973f8;
@@ -3303,6 +3309,7 @@ namespace FFlags
     uintptr_t EnableDevProductPurchaseChannel = 0x688a578;
     uintptr_t EnableDidSwitchAccount = 0x6866038;
     uintptr_t EnableDisplaySize = 0x68aa500;
+    uintptr_t EnableDrawProjectionImage = 0x689c430;
     uintptr_t EnableDrawProjectionImageWithMirroring = 0x689c460;
     uintptr_t EnableDynamicReloaderV2Telemetry = 0x688f558;
     uintptr_t EnableDynamicTranslation = 0x68952a8;
@@ -3502,6 +3509,7 @@ namespace FFlags
     uintptr_t EnableRecommendTopProductsApi = 0x688aeb0;
     uintptr_t EnableRecommendationService = 0x687e2d0;
     uintptr_t EnableRecordJoinAttemptIdForCEV = 0x6865b10;
+    uintptr_t EnableReferredByPlayerIdTelemetry = 0x68a9748;
     uintptr_t EnableReflectionCrashFixLoggingPercent = 0x756fbe4;
     uintptr_t EnableRefreshFeatureRestrictions = 0x689d318;
     uintptr_t EnableRemainInExperienceOnHandleDeepLinkUrl = 0x6869f90;
@@ -3642,6 +3650,7 @@ namespace FFlags
     uintptr_t EngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpLayer = 0x688eec8;
     uintptr_t EngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpOverrideEnabled = 0x68e0a90;
     uintptr_t EngineVoiceWebrtcAudioJitterBufferFastAccelerateIxpVariable = 0x68e0ab0;
+    uintptr_t EngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpEnabled = 0x688eef8;
     uintptr_t EngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpLayer = 0x688ef28;
     uintptr_t EngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpOverrideEnabled = 0x68e0ae0;
     uintptr_t EngineVoiceWebrtcRobloxAudioJitterBufferSizeDecreaseIxpVariable = 0x68e0b00;
@@ -5486,6 +5495,7 @@ namespace FFlags
     uintptr_t LayOnHandsCooldownMs = 0x6848cec;
     uintptr_t LayerCollectorGetGuiObjectsAtPosition = 0x68ab650;
     uintptr_t LayoutErrors = 0x68ab550;
+    uintptr_t LayoutNodeChildVisibilityConsiderRotation = 0x68ac080;
     uintptr_t LazyLoadReverb = 0x68ae7e8;
     uintptr_t LcComputeHsrVisability = 0x6887688;
     uintptr_t LcFixComputeHsrVisibility = 0x68876b8;
@@ -5978,6 +5988,7 @@ namespace FFlags
     uintptr_t MemoryProfileTimingFreq = 0x6863880;
     uintptr_t MemoryProfilerTelemetryRealThrottle = 0x756ff44;
     uintptr_t MemoryProfilingTopLevelUsageMutex = 0x68dac90;
+    uintptr_t MemoryStats = 0x41ad280;
     uintptr_t MemoryStore = 0x68e0190;
     uintptr_t MemoryStoreEnableStartupLocalThrottling = 0x68e0020;
     uintptr_t MemoryStoreEnableStudioStartupLocalThrottlingForTest = 0x68e28c0;
@@ -6265,6 +6276,7 @@ namespace FFlags
     uintptr_t NavigationFixNewHeuristic = 0x68a8908;
     uintptr_t NavigationHang = 0x68a5c18;
     uintptr_t NavigationHighComputePathTimeThresholdMsec = 0x684ca28;
+    uintptr_t NavigationImprovedWallEdgeRecog = 0x68a6038;
     uintptr_t NavigationJobMaxTimeBudgetMS = 0x684c9f4;
     uintptr_t NavigationJobRunsPerSecond = 0x684ca00;
     uintptr_t NavigationMaxMemoryBytes = 0x684c9e0;
@@ -6797,6 +6809,7 @@ namespace FFlags
     uintptr_t PathfindingStatsPerRequestThrottleHundrethsPercentPoints = 0x75705b8;
     uintptr_t PathfindingSupportPartialPath = 0x68a5df8;
     uintptr_t PathfindingTelemetryOptimization = 0x68a6468;
+    uintptr_t PathfindingUseImprovedSearch = 0x682ca70;
     uintptr_t PathfindingUseImprovedSearchDefaultEnabled = 0x68a31b0;
     uintptr_t PathfindingUseImprovedSearchOneFlag = 0x68a6188;
     uintptr_t PathfindingUseTerrainOffset = 0x68a6ab8;
@@ -7210,6 +7223,7 @@ namespace FFlags
     uintptr_t PolicyServiceReportFailureForLuobu = 0x6895808;
     uintptr_t PolicyServiceReportIsNotSubjectToChinaPolicies = 0x68957b8;
     uintptr_t PollingAssetWithUserId = 0x68a4bf8;
+    uintptr_t PoolInstances = 0x68c7140;
     uintptr_t PooledControlBlocks = 0x68583e8;
     uintptr_t PopulateCodecParVideoPropsFromWebmContainer = 0x68b2f60;
     uintptr_t PostJoinSetsStatsHundredths = 0x756e874;
@@ -8542,11 +8556,13 @@ namespace FFlags
     uintptr_t RodeoCanCaptureVideoBugFix = 0x68aa8f8;
     uintptr_t RodeoCaptureReplaceOnFlyBuffer = 0x68ddcd8;
     uintptr_t RodeoImageRenderFix = 0x687c978;
+    uintptr_t Rollback = 0x5be24b8;
     uintptr_t RolloutEnrollmentExpirationMinutes = 0x6863874;
     uintptr_t RolloutWarning = 0x68dc680;
     uintptr_t RomarkScreenshot = 0x68da048;
     uintptr_t RootMotionSupportedInternal = 0x6884290;
     uintptr_t RoundUpTextSizeInEngine = 0x68ab150;
+    uintptr_t RtMessaging = 0x6886760;
     uintptr_t RtMessagingTrace = 0x6886740;
     uintptr_t RtcAnalyticsInfluxReportHundredthsPercent = 0x75c7f78;
     uintptr_t RttMsAggregationCountThreshold = 0x684e910;
@@ -8558,6 +8574,7 @@ namespace FFlags
     uintptr_t RuntimeConcurrency = 0x75a7c6c;
     uintptr_t RuntimeContentLog = 0x68a37f8;
     uintptr_t RuntimeContentTelemetryHundredthsPercentage = 0x684c870;
+    uintptr_t RuntimeEnabled = 0x68d8ec0;
     uintptr_t RuntimeLoops = 0x6860484;
     uintptr_t RuntimeMaxNumOfConditions = 0x68604a8;
     uintptr_t RuntimeMaxNumOfLatches = 0x68604b4;
@@ -9289,6 +9306,7 @@ namespace FFlags
     uintptr_t SimStepPhysicFixBoneInstanceCrash = 0x6884840;
     uintptr_t SimStepPhysicsEnableTelemetry = 0x68a3c48;
     uintptr_t SimStepPhysicsFixNotifyPrimitivesUseAfterFree = 0x68a3bc0;
+    uintptr_t SimStepPhysicsFixSimulationDuringTeamCreate = 0x68a3c38;
     uintptr_t SimStepPhysicsReplaceDeque = 0x68a3b60;
     uintptr_t SimStepPhysicsStatsHundredthsPercentage = 0x75705a0;
     uintptr_t SimStepPhysicsSupportSelectiveAnimation = 0x68a3c58;
@@ -10693,6 +10711,7 @@ namespace FFlags
     uintptr_t UGC_JoinRetryExpBackoff_MaxElapsedTimeMs = 0x68462fc;
     uintptr_t UGC_JoinRetryExpBackoff_Threshold = 0x756e460;
     uintptr_t UIDontPixelRoundRotatedRects = 0x68bbb00;
+    uintptr_t UIDragDetector = 0x551f720;
     uintptr_t UIDragDetectorAddProfiler = 0x68de4c0;
     uintptr_t UIDragDetectorAllowCancelOnGuiObjectPropertyChanges = 0x68ab320;
     uintptr_t UIDragDetectorBoundingBehaviorEnum = 0x68de380;
@@ -10736,6 +10755,7 @@ namespace FFlags
     uintptr_t UIPageLayoutProperBounds = 0x68ac1b0;
     uintptr_t UIPageLayoutTicksPerPageHundreths = 0x684cdf0;
     uintptr_t UIPerfSplitCoreDevSampleIntervalSeconds = 0x684cd68;
+    uintptr_t UIPerfSplitCoreDev_ReportHundredthsPercent = 0x7570704;
     uintptr_t UIQuadTreeCellAreaMin = 0x684cdfc;
     uintptr_t UIRenderTextureFlow = 0x687b650;
     uintptr_t UISYS1483_ReportRatePercentHundredths = 0x7570724;
@@ -11154,6 +11174,7 @@ namespace FFlags
     uintptr_t VideoAndroidVP9DecoderTurnOnSocFilter = 0x68b2dd0;
     uintptr_t VideoAndroidVP9FilterByHardwareRender = 0x6893928;
     uintptr_t VideoAndroidVP9TurnOnFilter = 0x68b2dc0;
+    uintptr_t VideoApiEnabled = 0x6894450;
     uintptr_t VideoAsyncStream = 0x68a3e90;
     uintptr_t VideoAudioBitrate = 0x684ea38;
     uintptr_t VideoAudioBufferHeadroomFactor = 0x684c0d8;
@@ -11906,6 +11927,7 @@ namespace FFlags
     uintptr_t WrapTextureTransferOnPerformTransferLoggingHundredthsPercentage = 0x756fac4;
     uintptr_t WrappedGridFixCLI148409 = 0x6887738;
     uintptr_t WrapsUsesMeshScale = 0x5b95a24;
+    uintptr_t WriteBodyToFile = 0x68dc8f0;
     uintptr_t WriteFileMeshToChunks = 0x68c3310;
     uintptr_t WriteFlagCacheAfterDynamicFetch = 0x688f458;
     uintptr_t WriteFlagCacheAfterFlagFetch = 0x68b4a98;
